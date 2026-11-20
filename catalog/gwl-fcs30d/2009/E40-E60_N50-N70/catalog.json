@@ -1,0 +1,155 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2009-E40-E60_N50-N70",
+  "title": "GWL_FCS30D 2009, 40°E–60°E, 50°N–70°N",
+  "description": "The 16 GWL_FCS30D tiles for 2009 in the 20° block 40°E–60°E, 50°N–70°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E40N55_2009/E40N55_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E40N55, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E40N60_2009/E40N60_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E40N60, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E40N65_2009/E40N65_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E40N65, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E40N70_2009/E40N70_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E40N70, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E45N55_2009/E45N55_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E45N55, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E45N60_2009/E45N60_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E45N60, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E45N65_2009/E45N65_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E45N65, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E45N70_2009/E45N70_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E45N70, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E50N55_2009/E50N55_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E50N55, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E50N60_2009/E50N60_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E50N60, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E50N65_2009/E50N65_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E50N65, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E50N70_2009/E50N70_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E50N70, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E55N55_2009/E55N55_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E55N55, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E55N60_2009/E55N60_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E55N60, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E55N65_2009/E55N65_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E55N65, 2009"
+    },
+    {
+      "rel": "item",
+      "href": "./E55N70_2009/E55N70_2009.json",
+      "type": "application/geo+json",
+      "title": "Tile E55N70, 2009"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2009/E40-E60_N50-N70/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

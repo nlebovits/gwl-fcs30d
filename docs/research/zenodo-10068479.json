@@ -1,0 +1,147 @@
+{
+  "id": 10068479,
+  "doi": "10.5281/zenodo.10068479",
+  "links": {
+    "html": "https://zenodo.org/records/10068479"
+  },
+  "metadata": {
+    "title": "Time-series global 30 m wetland maps from 2000 to 2022",
+    "publication_date": "2023-11-03",
+    "creators": [
+      {
+        "name": "Liangyun, Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao, Zhang",
+        "affiliation": null
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "description": "<p><strong>Basic information</strong></p><p>A novel global 30 m wetland annual dataset with fine classification system is generated, covering the period of 2000-2022 and containing 8 wetland subcategories (permanent water, swamp, marsh, flooded flats, saline, mangrove forest, salt marshes, and tidal flats).&nbsp;</p><p><strong>Notes:</strong></p><p>The GWL_FCS30 annual maps are divided into 961 5°×5° geographical tiles, and each tile contains 23 bands which denotes the tidal flat maps in 2000, 2001, 2002,..., 2021, 2022.</p><p><strong>Usage Policy:</strong></p><p>If you plan to use our data in <strong>a scientific analysis paper</strong>, we strongly recommend contacting us in advance to seek opinions, and consider our contributions in the acknowledgments or as co-authors.</p><p><strong>Citations:</strong></p><p>Zhang, X., Liu, L., Zhao, T., Chen, X., Lin, S., Wang, J., Mi, J., and Liu, W.: GWL_FCS30: a global 30 m wetland map with a fine classification system using multi-sourced and time-series remote sensing imagery in 2020, Earth Syst. Sci. Data, 15, 265–293, <a href=\"https://doi.org/10.5194/essd-15-265-2023\">https://doi.org/10.5194/essd-15-265-2023</a>, 2023</p>"
+  },
+  "files": [
+    {
+      "key": "GWL_FCS30_2001.zip",
+      "size": 2518834118,
+      "checksum": "md5:c5c245195930370fb3e9ce309024f3dc"
+    },
+    {
+      "key": "GWL_FCS30_2002.zip",
+      "size": 2528917237,
+      "checksum": "md5:1e6d1fa47220591f340feb26797961c5"
+    },
+    {
+      "key": "GWL_FCS30_2003.zip",
+      "size": 2533637055,
+      "checksum": "md5:c1fc52df6e77f6023c2e8ddd4af853b7"
+    },
+    {
+      "key": "GWL_FCS30_2000.zip",
+      "size": 2522648617,
+      "checksum": "md5:dc6d85a20b1eff1661da1c708e347b6c"
+    },
+    {
+      "key": "GWL_FCS30_2013.zip",
+      "size": 2537595825,
+      "checksum": "md5:bca4f3d165234a8cb8ccdceaabc5743d"
+    },
+    {
+      "key": "GWL_FCS30_2014.zip",
+      "size": 2527929397,
+      "checksum": "md5:8722bbc0df34fb74b26af8a5ddc5ac96"
+    },
+    {
+      "key": "GWL_FCS30_2015.zip",
+      "size": 2535160789,
+      "checksum": "md5:01e9eb49b99828c610d8e99f6b77ff0c"
+    },
+    {
+      "key": "GWL_FCS30_2004.zip",
+      "size": 2536067932,
+      "checksum": "md5:db4e90e88926aef013ff9363842967b2"
+    },
+    {
+      "key": "GWL_FCS30_2006.zip",
+      "size": 2528571201,
+      "checksum": "md5:d785edefc0e7f49c7beb6aebb78474d2"
+    },
+    {
+      "key": "GWL_FCS30_2005.zip",
+      "size": 2529982405,
+      "checksum": "md5:d9d6ef86f3a33edd52e4c512192de25b"
+    },
+    {
+      "key": "GWL_FCS30_2009.zip",
+      "size": 2526800432,
+      "checksum": "md5:d46938fd9251a53887e09463c85b0b34"
+    },
+    {
+      "key": "GWL_FCS30_2010.zip",
+      "size": 2530890023,
+      "checksum": "md5:3989fb9546a26e4cd2dfed858c12ec35"
+    },
+    {
+      "key": "GWL_FCS30_2007.zip",
+      "size": 2524733789,
+      "checksum": "md5:0447b02928060acee59fd35034d8238a"
+    },
+    {
+      "key": "GWL_FCS30_2012.zip",
+      "size": 2538542503,
+      "checksum": "md5:51d1abb0daf72acf3ab3c0d9982dfed3"
+    },
+    {
+      "key": "GWL_FCS30_2011.zip",
+      "size": 2541454900,
+      "checksum": "md5:5e152dcc17bf52a42e4805e1320de960"
+    },
+    {
+      "key": "GWL_FCS30_2008.zip",
+      "size": 2524416772,
+      "checksum": "md5:72af036ca021c245dff9d3c4a0195db7"
+    },
+    {
+      "key": "GWL_FCS30_2018.zip",
+      "size": 2552688633,
+      "checksum": "md5:246332e07b6b21608e732ac1dc18812e"
+    },
+    {
+      "key": "GWL_FCS30_2017.zip",
+      "size": 2548765573,
+      "checksum": "md5:43f9c9819dec2eb552242ce5368cd6a5"
+    },
+    {
+      "key": "GWL_FCS30_2016.zip",
+      "size": 2539602123,
+      "checksum": "md5:357656afc1ff2797ad31e37da1415663"
+    },
+    {
+      "key": "GWL_FCS30_annualmapping_20002022.js",
+      "size": 6662,
+      "checksum": "md5:e660b3afc11d24153c8f3294f8e1d4bf"
+    },
+    {
+      "key": "GWL_FCS30_2019.zip",
+      "size": 2560040251,
+      "checksum": "md5:319d10b5901093cde60070a101ccd945"
+    },
+    {
+      "key": "GWL_FCS30_2020.zip",
+      "size": 2549928665,
+      "checksum": "md5:5ffec9ba611d0aef7905e411d05f9ec2"
+    },
+    {
+      "key": "GWL_FCS30_2021.zip",
+      "size": 2546271496,
+      "checksum": "md5:c684c6d58152dfe5af7be7ad7f30afac"
+    },
+    {
+      "key": "GWL_FCS30_2022.zip",
+      "size": 2556218552,
+      "checksum": "md5:fdeb660bf19774aec7ebe8914932f06a"
+    }
+  ]
+}

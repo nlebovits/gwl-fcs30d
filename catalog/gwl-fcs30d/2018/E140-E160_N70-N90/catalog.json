@@ -1,0 +1,107 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2018-E140-E160_N70-N90",
+  "title": "GWL_FCS30D 2018, 140°E–160°E, 70°N–90°N",
+  "description": "The 8 GWL_FCS30D tiles for 2018 in the 20° block 140°E–160°E, 70°N–90°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N75_2018/E140N75_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N75, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N80_2018/E140N80_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N80, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E145N75_2018/E145N75_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E145N75, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E145N80_2018/E145N80_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E145N80, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E150N75_2018/E150N75_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E150N75, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E150N80_2018/E150N80_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E150N80, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N75_2018/E155N75_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N75, 2018"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N80_2018/E155N80_2018.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N80, 2018"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2018/E140-E160_N70-N90/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

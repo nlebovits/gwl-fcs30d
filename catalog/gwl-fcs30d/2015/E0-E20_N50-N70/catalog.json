@@ -1,0 +1,137 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2015-E0-E20_N50-N70",
+  "title": "GWL_FCS30D 2015, 0°E–20°E, 50°N–70°N",
+  "description": "The 13 GWL_FCS30D tiles for 2015 in the 20° block 0°E–20°E, 50°N–70°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E0N55_2015/E0N55_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E0N55, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E0N65_2015/E0N65_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E0N65, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E10N55_2015/E10N55_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E10N55, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E10N60_2015/E10N60_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E10N60, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E10N65_2015/E10N65_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E10N65, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E10N70_2015/E10N70_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E10N70, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E15N55_2015/E15N55_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E15N55, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E15N60_2015/E15N60_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E15N60, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E15N65_2015/E15N65_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E15N65, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E15N70_2015/E15N70_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E15N70, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E5N55_2015/E5N55_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E5N55, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E5N60_2015/E5N60_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E5N60, 2015"
+    },
+    {
+      "rel": "item",
+      "href": "./E5N65_2015/E5N65_2015.json",
+      "type": "application/geo+json",
+      "title": "Tile E5N65, 2015"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2015/E0-E20_N50-N70/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

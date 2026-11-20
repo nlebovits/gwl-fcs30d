@@ -1,0 +1,676 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "gwl-fcs30d",
+  "title": "GWL_FCS30D: global 30 m annual wetland maps, 2000–2022",
+  "description": "Annual global maps of eight wetland classes at 30 m for 2000 to 2022, produced from Landsat time series by Xiao Zhang, Liangyun Liu and colleagues at the Aerospace Information Research Institute, Chinese Academy of Sciences ([paper](https://doi.org/10.1038/s41597-024-03143-0)). This mirror converts the producer's yearly zip archives on [Zenodo](https://zenodo.org/records/10068479) into Cloud-Optimized GeoTIFFs with embedded colour tables, statistics and overviews, one STAC item per 5° tile per year, and an `items.parquet` index of all items. Pixel values are unchanged. Read [AGENTS.md](AGENTS.md) before you query it.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "wetlands",
+    "GWL_FCS30D",
+    "land cover",
+    "Landsat",
+    "mangrove",
+    "tidal flat",
+    "salt marsh",
+    "swamp",
+    "marsh",
+    "Ramsar",
+    "SDG 6.6.1",
+    "time series",
+    "global"
+  ],
+  "providers": [
+    {
+      "name": "Aerospace Information Research Institute, Chinese Academy of Sciences (Liangyun Liu, Xiao Zhang et al.)",
+      "description": "Produced GWL_FCS30D and publishes it on Zenodo.",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "http://english.aircas.cas.cn/"
+    },
+    {
+      "name": "Portolan Mirrors",
+      "description": "Maintains this mirror: COG conversion, STAC metadata, item index and documentation.",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://github.com/nlebovits/gwl-fcs30d"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.000202534466084,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2022-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "updated": "2026-11-20T11:42:50Z",
+  "sci:doi": "10.5281/zenodo.10068479",
+  "sci:citation": "Liu, L. & Zhang, X. (2023). Time-series global 30 m wetland maps from 2000 to 2022 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10068479",
+  "sci:publications": [
+    {
+      "doi": "10.1038/s41597-024-03143-0",
+      "citation": "Zhang, X., Liu, L., Zhao, T., Wang, J., Liu, W. & Chen, X. Global annual wetland dataset at 30 m with a fine classification system from 2000 to 2022. Sci Data 11, 310 (2024). https://doi.org/10.1038/s41597-024-03143-0"
+    }
+  ],
+  "item_assets": {
+    "data": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Wetland class map (COG)",
+      "description": "One band of GWL_FCS30D class codes, uint8, EPSG:4326, about 30 m. The embedded colour table draws the classes; 255 is ocean and is declared nodata.",
+      "data_type": "uint8",
+      "nodata": 255,
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "non-wetland",
+          "title": "Non-wetland",
+          "description": "Land the producer did not classify as wetland (the classifier's unmask(0) fill).",
+          "color_hint": "EBEBEB"
+        },
+        {
+          "value": 180,
+          "name": "permanent-water",
+          "title": "Permanent water",
+          "description": "Retaining water consistently throughout the year",
+          "color_hint": "0046C8"
+        },
+        {
+          "value": 181,
+          "name": "swamp",
+          "title": "Swamp",
+          "description": "Inland natural wetlands mainly covered by tree vegetation (forest and shrub)",
+          "color_hint": "00A884"
+        },
+        {
+          "value": 182,
+          "name": "marsh",
+          "title": "Marsh",
+          "description": "Inland natural wetlands dominated by herbaceous vegetation",
+          "color_hint": "73FFDF"
+        },
+        {
+          "value": 183,
+          "name": "flooded-flat",
+          "title": "Flooded flat",
+          "description": "Non-vegetated inland areas regularly inundated with water, typically during seasonal or periodic flooding events",
+          "color_hint": "9EBBD7"
+        },
+        {
+          "value": 184,
+          "name": "saline",
+          "title": "Saline",
+          "description": "High salt concentrations in the area's water, soil, or vegetation",
+          "color_hint": "828282"
+        },
+        {
+          "value": 185,
+          "name": "mangrove",
+          "title": "Mangrove forest",
+          "description": "Salt-tolerant trees and shrubs that grow in brackish water",
+          "color_hint": "F57AB6"
+        },
+        {
+          "value": 186,
+          "name": "salt-marsh",
+          "title": "Salt marsh",
+          "description": "Coastal wetland characterized by salt-tolerant vegetation, typically found in intertidal zones",
+          "color_hint": "66CDAB"
+        },
+        {
+          "value": 187,
+          "name": "tidal-flat",
+          "title": "Tidal flat",
+          "description": "Muddy or rocky areas that are submerged during high tides and exposed during low tides",
+          "color_hint": "444F89"
+        },
+        {
+          "value": 188,
+          "name": "undocumented-188",
+          "title": "Undocumented code 188",
+          "description": "Present in the producer's files but absent from their published code list. Meaning unknown.",
+          "color_hint": "FF00FF"
+        },
+        {
+          "value": 255,
+          "name": "ocean",
+          "title": "Ocean (not mapped)",
+          "description": "Ocean, outside the mapped area. Declared nodata in this mirror.",
+          "nodata": true
+        }
+      ]
+    }
+  },
+  "assets": {
+    "items": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "roles": [
+        "collection-mirror"
+      ],
+      "title": "All items as STAC-GeoParquet",
+      "description": "One row per tile-year item, spatially ordered. Query it instead of walking the tree.",
+      "file:size": 2806147,
+      "file:checksum": "12209065a81f306bf6f9503057c12f795d97f38074a63204308dd8038905a769078e"
+    },
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Wetland classes in 2022",
+      "description": "Drawn from the 2022 overview with the embedded colour table.",
+      "file:size": 34787,
+      "file:checksum": "1220218d3d526c26754e239a6ec8d97c3974d14fde60ec20be0d44aaa805a875ac1c"
+    },
+    "overview-2022": {
+      "href": "./overview-2022.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "visual",
+        "overview"
+      ],
+      "title": "Global overview, 2022 (RGB, Web Mercator)",
+      "description": "8-bit RGBA mosaic of the 2022 tiles in EPSG:3857, coloured with the class table. For browsing the coverage, not for analysis.",
+      "start_datetime": "2022-01-01T00:00:00Z",
+      "end_datetime": "2022-12-31T23:59:59Z",
+      "file:size": 14185637,
+      "file:checksum": "1220791545a2f3a155d74c4695cb858feeb45dba2af1db331a375c9525ce27b81feb"
+    },
+    "source-2000": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2000.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2000.zip (Zenodo)",
+      "description": "The producers' original 2000 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2522648617,
+      "file:checksum": "12208f7031a311131bac2bea93154d2f3748a601df16dfcc72e22ef43b1993cc7a6d"
+    },
+    "source-2001": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2001.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2001.zip (Zenodo)",
+      "description": "The producers' original 2001 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2518834118,
+      "file:checksum": "12200d65e5bf3d36a6a584b724929ecb16316adf08eff8663d74841401cd7544baa6"
+    },
+    "source-2002": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2002.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2002.zip (Zenodo)",
+      "description": "The producers' original 2002 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2528917237,
+      "file:checksum": "1220e4bcc563bb282190e23d2b937e9d3847faf3dadd35287f62730017302f37e5e7"
+    },
+    "source-2003": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2003.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2003.zip (Zenodo)",
+      "description": "The producers' original 2003 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2533637055,
+      "file:checksum": "1220464f5fb266821f46b0ba1d396c37c2ef8df79bad8d974761336f12471084fdee"
+    },
+    "source-2004": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2004.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2004.zip (Zenodo)",
+      "description": "The producers' original 2004 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2536067932,
+      "file:checksum": "1220dfca787b922f227be2dc009c3707222b1ea066fac65c86293422de26bceef6c6"
+    },
+    "source-2005": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2005.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2005.zip (Zenodo)",
+      "description": "The producers' original 2005 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2529982405,
+      "file:checksum": "122030b682751247b2369aa4f325ffb5d577c930f1a639455c969ddd56b4f921f63b"
+    },
+    "source-2006": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2006.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2006.zip (Zenodo)",
+      "description": "The producers' original 2006 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2528571201,
+      "file:checksum": "1220f1ff6954485435dad55959a6f29beb2873692e994e71b199b15be144a7137bf8"
+    },
+    "source-2007": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2007.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2007.zip (Zenodo)",
+      "description": "The producers' original 2007 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2524733789,
+      "file:checksum": "122007e79103fcdcc543d466f12235ab3f7071534f86607a1ed30f1372cb03d621ac"
+    },
+    "source-2008": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2008.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2008.zip (Zenodo)",
+      "description": "The producers' original 2008 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2524416772,
+      "file:checksum": "1220e64fb7f38a0c3cb2f9f55d4e974090b965e97147439be608c695dba43dda8e4c"
+    },
+    "source-2009": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2009.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2009.zip (Zenodo)",
+      "description": "The producers' original 2009 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2526800432,
+      "file:checksum": "12202d4c714ae95a0883c5dfaedef09a69d0d716fd1dc2266ef1cd6515d9516e6c39"
+    },
+    "source-2010": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2010.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2010.zip (Zenodo)",
+      "description": "The producers' original 2010 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2530890023,
+      "file:checksum": "12205cf0cca22c81304a2da72edf397510c8118d58f88b02f6ba215c8af9e0f2a9f3"
+    },
+    "source-2011": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2011.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2011.zip (Zenodo)",
+      "description": "The producers' original 2011 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2541454900,
+      "file:checksum": "12203d26fbebf649dfa42682cae9068330289b08ac840d70e5fc248672105de3ea88"
+    },
+    "source-2012": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2012.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2012.zip (Zenodo)",
+      "description": "The producers' original 2012 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2538542503,
+      "file:checksum": "122026abb1df5cbf7e19fa8c6004037cde55cf0b89377aa14534cca9b85ad0323a8c"
+    },
+    "source-2013": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2013.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2013.zip (Zenodo)",
+      "description": "The producers' original 2013 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2537595825,
+      "file:checksum": "12204778836c6e1ddc1a0676fd13baeeab241045981f50655bd74c7fc3a95963a1af"
+    },
+    "source-2014": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2014.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2014.zip (Zenodo)",
+      "description": "The producers' original 2014 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2527929397,
+      "file:checksum": "1220ab571554d8d88a211ea7c8c79ffa3054b41240d6b633cfed88627ad9ea84ff58"
+    },
+    "source-2015": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2015.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2015.zip (Zenodo)",
+      "description": "The producers' original 2015 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2535160789,
+      "file:checksum": "1220070e4016625300e9f9e41123a942d8a10c60b2ad26cdaf0edd7da68c3bfdb77b"
+    },
+    "source-2016": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2016.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2016.zip (Zenodo)",
+      "description": "The producers' original 2016 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2539602123,
+      "file:checksum": "1220933b4c0a82740d24ca8f8d698f007f5f3919e2b1c67b8dd258828e625677ac5c"
+    },
+    "source-2017": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2017.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2017.zip (Zenodo)",
+      "description": "The producers' original 2017 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2548765573,
+      "file:checksum": "1220185e2283d1c1b655ec247eb90e4c22170872e699eb2e6ef6691b4886885001ed"
+    },
+    "source-2018": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2018.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2018.zip (Zenodo)",
+      "description": "The producers' original 2018 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2552688633,
+      "file:checksum": "12209e0a31641f3b95584d48cfcf4bb21a595d71b73fe8714fc4e2ca4d3230b216b9"
+    },
+    "source-2019": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2019.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2019.zip (Zenodo)",
+      "description": "The producers' original 2019 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2560040251,
+      "file:checksum": "1220c0eb040ef2afaf8e8e0b009972bf14b52e3e5e601c584842a8b7718bc40a46bd"
+    },
+    "source-2020": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2020.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2020.zip (Zenodo)",
+      "description": "The producers' original 2020 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2549928665,
+      "file:checksum": "122046ef0799ab1956992dc7ebf8f322328c9c74544fabf84fc2ddcf157358ac1f6f"
+    },
+    "source-2021": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2021.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2021.zip (Zenodo)",
+      "description": "The producers' original 2021 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2546271496,
+      "file:checksum": "1220a487d3732ce470c52bce72c26fd7bee2c410e38b74acdc409cd30c44e41e8ba0"
+    },
+    "source-2022": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_2022.zip",
+      "type": "application/zip",
+      "roles": [
+        "source"
+      ],
+      "title": "Upstream archive GWL_FCS30_2022.zip (Zenodo)",
+      "description": "The producers' original 2022 maps: 957 single-band GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical.",
+      "file:size": 2556218552,
+      "file:checksum": "12204342f01d1f4ef6306dab33d0ef6cce4541a88465f06af7705d8820319c6a19f3"
+    },
+    "source-script": {
+      "href": "https://zenodo.org/records/10068479/files/GWL_FCS30_annualmapping_20002022.js",
+      "type": "text/javascript",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Producer's Earth Engine classification script (Zenodo)",
+      "description": "The Google Earth Engine script the producers published with the data. It defines the class codes (line 78) and fills unclassified land with 0 (line 88).",
+      "file:size": 6662,
+      "file:checksum": "12202377407937453f390ea41b683b46508e44df9b73359efcb5ceb232ce5e65a770"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./2000/catalog.json",
+      "type": "application/json",
+      "title": "2000"
+    },
+    {
+      "rel": "child",
+      "href": "./2001/catalog.json",
+      "type": "application/json",
+      "title": "2001"
+    },
+    {
+      "rel": "child",
+      "href": "./2002/catalog.json",
+      "type": "application/json",
+      "title": "2002"
+    },
+    {
+      "rel": "child",
+      "href": "./2003/catalog.json",
+      "type": "application/json",
+      "title": "2003"
+    },
+    {
+      "rel": "child",
+      "href": "./2004/catalog.json",
+      "type": "application/json",
+      "title": "2004"
+    },
+    {
+      "rel": "child",
+      "href": "./2005/catalog.json",
+      "type": "application/json",
+      "title": "2005"
+    },
+    {
+      "rel": "child",
+      "href": "./2006/catalog.json",
+      "type": "application/json",
+      "title": "2006"
+    },
+    {
+      "rel": "child",
+      "href": "./2007/catalog.json",
+      "type": "application/json",
+      "title": "2007"
+    },
+    {
+      "rel": "child",
+      "href": "./2008/catalog.json",
+      "type": "application/json",
+      "title": "2008"
+    },
+    {
+      "rel": "child",
+      "href": "./2009/catalog.json",
+      "type": "application/json",
+      "title": "2009"
+    },
+    {
+      "rel": "child",
+      "href": "./2010/catalog.json",
+      "type": "application/json",
+      "title": "2010"
+    },
+    {
+      "rel": "child",
+      "href": "./2011/catalog.json",
+      "type": "application/json",
+      "title": "2011"
+    },
+    {
+      "rel": "child",
+      "href": "./2012/catalog.json",
+      "type": "application/json",
+      "title": "2012"
+    },
+    {
+      "rel": "child",
+      "href": "./2013/catalog.json",
+      "type": "application/json",
+      "title": "2013"
+    },
+    {
+      "rel": "child",
+      "href": "./2014/catalog.json",
+      "type": "application/json",
+      "title": "2014"
+    },
+    {
+      "rel": "child",
+      "href": "./2015/catalog.json",
+      "type": "application/json",
+      "title": "2015"
+    },
+    {
+      "rel": "child",
+      "href": "./2016/catalog.json",
+      "type": "application/json",
+      "title": "2016"
+    },
+    {
+      "rel": "child",
+      "href": "./2017/catalog.json",
+      "type": "application/json",
+      "title": "2017"
+    },
+    {
+      "rel": "child",
+      "href": "./2018/catalog.json",
+      "type": "application/json",
+      "title": "2018"
+    },
+    {
+      "rel": "child",
+      "href": "./2019/catalog.json",
+      "type": "application/json",
+      "title": "2019"
+    },
+    {
+      "rel": "child",
+      "href": "./2020/catalog.json",
+      "type": "application/json",
+      "title": "2020"
+    },
+    {
+      "rel": "child",
+      "href": "./2021/catalog.json",
+      "type": "application/json",
+      "title": "2021"
+    },
+    {
+      "rel": "child",
+      "href": "./2022/catalog.json",
+      "type": "application/json",
+      "title": "2022"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "GWL_FCS30D README"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for GWL_FCS30D"
+    },
+    {
+      "rel": "via",
+      "href": "https://zenodo.org/records/10068479",
+      "type": "text/html",
+      "title": "Upstream record on Zenodo"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.5281/zenodo.10068479",
+      "type": "text/html",
+      "title": "Dataset DOI"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/collection.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

@@ -14,7 +14,10 @@ widened allow-list is a false claim about what this catalog conforms to.
 
 ## The rashid version floor
 
-The gate needs rashid `>=0.1.5,<0.2.0`. It reads `rashid --version` and fails
+The gate needs rashid `>=0.4.0,<0.5.0`. 0.4.0 is the first release that does not
+require a style asset for a display-ready overview COG
+([rashid#202](https://github.com/portolan-sdi/rashid/issues/202)), which this
+catalog carries. It reads `rashid --version` and fails
 outside that range. It also fails when rashid is absent, and prints the install
 command. A skip would report a green run for a catalog that no validator read.
 
