@@ -1,0 +1,125 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2012-E140-E160_S30-S10",
+  "title": "GWL_FCS30D 2012, 140°E–160°E, 30°S–10°S",
+  "description": "The 11 GWL_FCS30D tiles for 2012 in the 20° block 140°E–160°E, 30°S–10°S. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E140S10_2012/E140S10_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E140S10, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E140S15_2012/E140S15_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E140S15, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E140S20_2012/E140S20_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E140S20, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E140S25_2012/E140S25_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E140S25, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E145S10_2012/E145S10_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E145S10, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E145S15_2012/E145S15_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E145S15, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E145S20_2012/E145S20_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E145S20, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E145S25_2012/E145S25_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E145S25, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E150S10_2012/E150S10_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E150S10, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E150S20_2012/E150S20_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E150S20, 2012"
+    },
+    {
+      "rel": "item",
+      "href": "./E150S25_2012/E150S25_2012.json",
+      "type": "application/geo+json",
+      "title": "Tile E150S25, 2012"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2012/E140-E160_S30-S10/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

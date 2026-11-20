@@ -1,0 +1,143 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2013-E140-E160_N50-N70",
+  "title": "GWL_FCS30D 2013, 140°E–160°E, 50°N–70°N",
+  "description": "The 14 GWL_FCS30D tiles for 2013 in the 20° block 140°E–160°E, 50°N–70°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N55_2013/E140N55_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N55, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N60_2013/E140N60_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N60, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N65_2013/E140N65_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N65, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E140N70_2013/E140N70_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E140N70, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E145N60_2013/E145N60_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E145N60, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E145N65_2013/E145N65_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E145N65, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E145N70_2013/E145N70_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E145N70, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E150N60_2013/E150N60_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E150N60, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E150N65_2013/E150N65_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E150N65, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E150N70_2013/E150N70_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E150N70, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N55_2013/E155N55_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N55, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N60_2013/E155N60_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N60, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N65_2013/E155N65_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N65, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E155N70_2013/E155N70_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E155N70, 2013"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2013/E140-E160_N50-N70/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

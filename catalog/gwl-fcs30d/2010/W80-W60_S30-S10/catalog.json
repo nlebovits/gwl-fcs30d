@@ -1,0 +1,143 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2010-W80-W60_S30-S10",
+  "title": "GWL_FCS30D 2010, 80°W–60°W, 30°S–10°S",
+  "description": "The 14 GWL_FCS30D tiles for 2010 in the 20° block 80°W–60°W, 30°S–10°S. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./W65S10_2010/W65S10_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W65S10, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W65S15_2010/W65S15_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W65S15, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W65S20_2010/W65S20_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W65S20, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W65S25_2010/W65S25_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W65S25, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W70S10_2010/W70S10_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W70S10, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W70S15_2010/W70S15_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W70S15, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W70S20_2010/W70S20_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W70S20, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W70S25_2010/W70S25_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W70S25, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W75S10_2010/W75S10_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W75S10, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W75S15_2010/W75S15_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W75S15, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W75S20_2010/W75S20_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W75S20, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W75S25_2010/W75S25_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W75S25, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W80S10_2010/W80S10_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W80S10, 2010"
+    },
+    {
+      "rel": "item",
+      "href": "./W80S15_2010/W80S15_2010.json",
+      "type": "application/geo+json",
+      "title": "Tile W80S15, 2010"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2010/W80-W60_S30-S10/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

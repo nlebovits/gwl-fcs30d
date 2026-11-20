@@ -1,0 +1,149 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2014-W100-W80_N10-N30",
+  "title": "GWL_FCS30D 2014, 100°W–80°W, 10°N–30°N",
+  "description": "The 15 GWL_FCS30D tiles for 2014 in the 20° block 100°W–80°W, 10°N–30°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./W100N20_2014/W100N20_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W100N20, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W100N25_2014/W100N25_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W100N25, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W100N30_2014/W100N30_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W100N30, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W85N15_2014/W85N15_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W85N15, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W85N20_2014/W85N20_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W85N20, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W85N25_2014/W85N25_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W85N25, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W85N30_2014/W85N30_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W85N30, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W90N15_2014/W90N15_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W90N15, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W90N20_2014/W90N20_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W90N20, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W90N25_2014/W90N25_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W90N25, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W90N30_2014/W90N30_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W90N30, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W95N15_2014/W95N15_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W95N15, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W95N20_2014/W95N20_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W95N20, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W95N25_2014/W95N25_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W95N25, 2014"
+    },
+    {
+      "rel": "item",
+      "href": "./W95N30_2014/W95N30_2014.json",
+      "type": "application/geo+json",
+      "title": "Tile W95N30, 2014"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2014/W100-W80_N10-N30/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2013-E80-E100_S10-N10",
+  "title": "GWL_FCS30D 2013, 80°E–100°E, 10°S–10°N",
+  "description": "The 5 GWL_FCS30D tiles for 2013 in the 20° block 80°E–100°E, 10°S–10°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E80N10_2013/E80N10_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E80N10, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E90N10_2013/E90N10_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E90N10, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E95N0_2013/E95N0_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E95N0, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E95N10_2013/E95N10_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E95N10, 2013"
+    },
+    {
+      "rel": "item",
+      "href": "./E95N5_2013/E95N5_2013.json",
+      "type": "application/geo+json",
+      "title": "Tile E95N5, 2013"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2013/E80-E100_S10-N10/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

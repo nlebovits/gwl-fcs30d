@@ -1,0 +1,641 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2018",
+  "title": "GWL_FCS30D 2018",
+  "description": "GWL_FCS30D wetland classes for 2018: 957 tiles of 5° × 5°, grouped in 20° blocks. See the [collection agent guide](../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E0-E20_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "0°E–20°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E100-E120_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "100°E–120°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E120-E140_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "120°E–140°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E140-E160_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "140°E–160°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E160-E180_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "160°E–180°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E160-E180_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "160°E–180°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E160-E180_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "160°E–180°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E20-E40_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "20°E–40°E, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E40-E60_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "40°E–60°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./E60-E80_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "60°E–80°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E60-E80_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "60°E–80°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E60-E80_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "60°E–80°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E60-E80_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "60°E–80°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E60-E80_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "60°E–80°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E80-E100_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "80°E–100°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E80-E100_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "80°E–100°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E80-E100_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "80°E–100°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E80-E100_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "80°E–100°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./E80-E100_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "80°E–100°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W100-W80_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "100°W–80°W, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W100-W80_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "100°W–80°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W100-W80_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "100°W–80°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W100-W80_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "100°W–80°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W100-W80_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "100°W–80°W, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W120-W100_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "120°W–100°W, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W120-W100_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "120°W–100°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W120-W100_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "120°W–100°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W120-W100_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "120°W–100°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W140-W120_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "140°W–120°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W140-W120_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "140°W–120°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W140-W120_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "140°W–120°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W160-W140_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "160°W–140°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W160-W140_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "160°W–140°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W180-W160_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "180°W–160°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W180-W160_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "180°W–160°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W20-E0_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "20°W–0°E, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W40-W20_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "40°W–20°W, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W60-W40_S70-S50/catalog.json",
+      "type": "application/json",
+      "title": "60°W–40°W, 70°S–50°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_N10-N30/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 10°N–30°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_N30-N50/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 30°N–50°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_N50-N70/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 50°N–70°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_N70-N90/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 70°N–90°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_S10-N10/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 10°S–10°N"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_S30-S10/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 30°S–10°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_S50-S30/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 50°S–30°S"
+    },
+    {
+      "rel": "child",
+      "href": "./W80-W60_S70-S50/catalog.json",
+      "type": "application/json",
+      "title": "80°W–60°W, 70°S–50°S"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2018/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

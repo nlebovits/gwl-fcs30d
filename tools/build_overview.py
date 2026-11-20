@@ -112,7 +112,7 @@ def main() -> None:
     out = coll / f"overview-{a.year}.tif"
     tmp = f"/vsimem/overview-{a.year}.tif"
     profile = dict(driver="GTiff", width=width, height=height, count=4, dtype="uint8", crs="EPSG:3857",
-                   transform=from_origin(-HALF, y_top, RES, RES), photometric="RGB", tiled=True,
+                   transform=from_origin(-HALF, y_top, RES, RES), photometric="RGB", alpha="YES", tiled=True,
                    blockxsize=512, blockysize=512)
     with rasterio.open(tmp, "w", **profile) as dst:
         dst.write(np.moveaxis(rgba, 2, 0))

@@ -15,7 +15,7 @@ for y in $(seq 2000 2022); do
   grep " $z\$" MD5SUMS | md5sum -c --quiet - || { echo "md5 mismatch: $z" >&2; exit 1; }
   echo "== $y $(date -u +%FT%TZ)"
   (cd "$REPO" && uv run -q --with rasterio --with numpy python -I tools/convert.py \
-     --raw "$D/raw" --out "$D/staging" --facts "$D/facts" --years "$y" --workers 16) \
+     --raw "$D/raw" --out "$D/staging" --facts "$D/facts" --years "$y" --workers "${WORKERS:-16}") \
      || echo "!! $y had failed tiles; rerun after fixing"
 done
 echo "all years converted $(date -u +%FT%TZ)"

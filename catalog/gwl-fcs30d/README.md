@@ -111,10 +111,17 @@ The dataset is static upstream. A new Zenodo version would need a new sync.
 - **0 is a class, not missing data.** Only 255 is nodata. Excluding 0 drops all
   non-wetland land from a denominator.
 - **Code 188 is undocumented.** The producers list codes 0, 180 to 187 and
-  255. The files also hold 188, first found in tiles `E55N65_2000` (97,221
-  pixels near 55°E, 65°N) and `E55S20_2000` (12 pixels on Réunion). This mirror
-  keeps the pixels as they are and labels the code "Undocumented code 188". Its
-  meaning is unknown. `classification:classes` lists it like any other class.
+  255. The files also hold 188, in three tiles, counted over all 22,011 files:
+
+  | Tile | Where | Years | Pixels coded 188 |
+  |---|---|---|---|
+  | `E55N65` | Russia, 55–60°E, 60–65°N | all 23 | 2,460,586 |
+  | `E55S20` | Réunion | all 23 | 670 |
+  | `W55N75` | Greenland | 2011 only | 2 |
+
+  This mirror keeps the pixels as they are and labels the code "Undocumented
+  code 188". Its meaning is unknown. `classification:classes` lists it like
+  any other class.
 - **Tile `E55N65_2000` holds pixels coded 185, mangrove forest, at about 65°N.**
   Measured beside the 188 pixels above. Treat class codes near 188 pixels with
   care.

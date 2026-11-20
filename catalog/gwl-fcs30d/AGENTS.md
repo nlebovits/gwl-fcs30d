@@ -80,8 +80,9 @@ The same COG opens in GDAL as `/vsicurl/<href>`.
 
 - **`datetime` is null.** Each item covers a calendar year through
   `start_datetime` and `end_datetime`. Filter on `start_datetime`.
-- **188 is undocumented.** It occurs in a few tiles, for example
-  `E55N65_2000`. Its meaning is unknown. Exclude it from per-class results or
+- **188 is undocumented.** It occurs in tiles `E55N65` (every year, about
+  107,000 px a year), `E55S20` (every year, a few pixels) and `W55N75` (2011,
+  2 px). Its meaning is unknown. Exclude it from per-class results or
   report it separately; do not fold it into a neighbouring class.
 - **0 is not nodata.** Only 255 is. Treating 0 as nodata removes all
   non-wetland land from a share-of-land calculation.

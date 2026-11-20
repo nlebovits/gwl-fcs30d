@@ -1,0 +1,149 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2006-W60-W40_S30-S10",
+  "title": "GWL_FCS30D 2006, 60°W–40°W, 30°S–10°S",
+  "description": "The 15 GWL_FCS30D tiles for 2006 in the 20° block 60°W–40°W, 30°S–10°S. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./W45S10_2006/W45S10_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W45S10, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W45S15_2006/W45S15_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W45S15, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W45S20_2006/W45S20_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W45S20, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W50S10_2006/W50S10_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W50S10, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W50S15_2006/W50S15_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W50S15, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W50S20_2006/W50S20_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W50S20, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W50S25_2006/W50S25_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W50S25, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W55S10_2006/W55S10_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W55S10, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W55S15_2006/W55S15_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W55S15, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W55S20_2006/W55S20_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W55S20, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W55S25_2006/W55S25_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W55S25, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W60S10_2006/W60S10_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W60S10, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W60S15_2006/W60S15_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W60S15, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W60S20_2006/W60S20_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W60S20, 2006"
+    },
+    {
+      "rel": "item",
+      "href": "./W60S25_2006/W60S25_2006.json",
+      "type": "application/geo+json",
+      "title": "Tile W60S25, 2006"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2006/W60-W40_S30-S10/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}

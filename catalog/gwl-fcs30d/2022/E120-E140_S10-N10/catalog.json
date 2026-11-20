@@ -1,0 +1,131 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
+  ],
+  "id": "gwl-fcs30d-2022-E120-E140_S10-N10",
+  "title": "GWL_FCS30D 2022, 120°E–140°E, 10°S–10°N",
+  "description": "The 12 GWL_FCS30D tiles for 2022 in the 20° block 120°E–140°E, 10°S–10°N. Each item is one 5° × 5° tile of wetland classes at about 30 m. See the [collection agent guide](../../AGENTS.md) for the class codes and queries.",
+  "updated": "2026-11-20T11:42:50Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E120N0_2022/E120N0_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E120N0, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E120N10_2022/E120N10_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E120N10, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E120N5_2022/E120N5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E120N5, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E120S5_2022/E120S5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E120S5, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E125N0_2022/E125N0_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E125N0, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E125N10_2022/E125N10_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E125N10, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E125N5_2022/E125N5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E125N5, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E125S5_2022/E125S5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E125S5, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E130N0_2022/E130N0_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E130N0, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E130S5_2022/E130S5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E130S5, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E135N0_2022/E135N0_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E135N0, 2022"
+    },
+    {
+      "rel": "item",
+      "href": "./E135S5_2022/E135S5_2022.json",
+      "type": "application/geo+json",
+      "title": "Tile E135S5, 2022"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "README for this catalog"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent guide for this catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/gwl-fcs30d/2022/E120-E140_S10-N10/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
+    }
+  ]
+}
