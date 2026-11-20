@@ -65,8 +65,12 @@ def convert(zip_path: str, member: str, year: int, tile: str, out_root: str, fac
     if facts.exists() and dest.exists() and json.loads(facts.read_text())["file:size"] == dest.stat().st_size:
         return f"skip {iid}"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    staged = dest.with_suffix(".src.tif")
-    tmp_out = dest.with_suffix(".tif.part")
+    # Work files live outside out_root, so an upload of out_root during a run
+    # never sees them. Same filesystem, so the final os.replace stays atomic.
+    work = Path(out_root).parent / "convert-tmp"
+    work.mkdir(exist_ok=True)
+    staged = work / f"{iid}.src.tif"
+    tmp_out = work / f"{iid}.tif.part"
 
     # 1. Copy out of the zip to a tiled GTiff on disk, then set nodata and the
     #    colour table in place so the COG driver carries both over.
