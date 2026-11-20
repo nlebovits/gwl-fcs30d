@@ -60,7 +60,7 @@ YEARS = range(2000, 2023)
 # When this mirror last copied the upstream record (PORTO-CORE-057). Set it at
 # each sync; the generator writes it to `updated` on every catalog and
 # collection, so a rerun without a sync changes nothing.
-MIRRORED = "2026-11-20T00:00:00Z"  # shortcut: placeholder until the download finishes; set to its completion time
+MIRRORED = "2026-11-20T11:42:50Z"  # when the last Zenodo file finished downloading (MD5-verified)
 
 ZENODO_RECORD = "https://zenodo.org/records/10068479"
 ZENODO_DOI = "10.5281/zenodo.10068479"
