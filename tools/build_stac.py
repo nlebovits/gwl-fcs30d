@@ -342,6 +342,11 @@ def main() -> None:
                     "roles": ["source"] if f["key"].endswith(".zip") else ["metadata"],
                     "title": (f"Upstream archive {f['key']} (Zenodo)" if f["key"].endswith(".zip")
                               else "Producer's Earth Engine classification script (Zenodo)"),
+                    "description": (f"The producers' original {f['key'][-8:-4]} maps: 957 single-band"
+                                    " GeoTIFF tiles, before this mirror's COG conversion. Pixels are identical."
+                                    if f["key"].endswith(".zip") else
+                                    "The Google Earth Engine script the producers published with the data. It"
+                                    " defines the class codes (line 78) and fills unclassified land with 0 (line 88)."),
                     "file:size": f["size"],
                     # sha256 of the download, taken after its Zenodo md5 verified
                     # (tools/download.sh). Omitted until then, never guessed.
