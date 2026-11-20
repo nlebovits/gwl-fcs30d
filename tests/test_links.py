@@ -24,6 +24,8 @@ from publish import load_config  # noqa: E402
 
 config = load_config()
 BASE = ROOT / config["publish_dir"]
+# Staged data mirrors the published paths; tools/upload_data.py uploads it from here.
+DATA = (ROOT / config["data_dir"]).resolve() if config.get("data_dir") else None
 
 errors: list[str] = []
 skipped = 0
@@ -91,7 +93,9 @@ for path in documents:
             skipped += 1
             continue
         checked += 1
-        if not (path.parent / href).resolve().exists():
+        target = (path.parent / href).resolve()
+        staged = DATA / target.relative_to(BASE.resolve()) if DATA else None
+        if not target.exists() and not (staged and staged.exists()):
             errors.append(f"{rel_path}: asset {key} -> {href} does not exist")
 
 if skipped:

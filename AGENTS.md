@@ -1,37 +1,24 @@
-<!-- ops-sync:begin — synced from portolan-sdi/portolan-ops. Edit there, not here. -->
-# Portolan agent norms
-
-All agents MUST read this document before starting work, with no exceptions, ever. (Claude Code does not read `AGENTS.md` but imports this file via a one-line `CLAUDE.md`.) Most of this content is synced downstream from `portolan-ops`. Put repo-specific instructions in `AGENTS.md`, never in `CLAUDE.md`, which the sync overwrites.
-
-## Ground rules
-
-Agents MUST read the complete contents of [norms](https://github.com/portolan-sdi/portolan-ops/blob/main/norms) and [policies](https://github.com/portolan-sdi/portolan-ops/blob/main/policies/) before starting work, with no exceptions, ever.
-
-The [portolan-spec](https://github.com/portolan-sdi/portolan-spec) repo is the absolute ground truth for the Portolan spec. All other tools are downstream of it.
-
-Before documenting any command, flag, or API, verify that it exists.
-
-Use conventional commits always.
-
-All tickets and PRs MUST follow the [templates](https://github.com/portolan-sdi/portolan-ops/blob/main/templates/).
-
-GitHub applies issue forms only in the web UI. With `gh issue create`, write each form field as a `### <field label>` heading, in the form's order. Include `### Priority` with one of `P0` to `P3` from the [priority rubric](https://github.com/portolan-sdi/portolan-ops/blob/main/norms/repos.md#priority). Pass the form's type label with `--label`, and pass the body with `--body-file`. The writing hook denies a body that skips its form, and issue governance flags one.
-
-## Org-wide facts
-
-The canonical homepage is <https://www.portolan-sdi.org/>. Canonical URLs live in [copy/urls.md](https://github.com/portolan-sdi/portolan-ops/blob/main/copy/urls.md). Do not hardcode variants.
-
-Community discussion happens in the [Portolan Google Group](https://groups.google.com/g/portolan) and the [Portolan channel](https://cloudnativegeo.slack.com/archives/C0A1JBH9529) in Cloud-Native Geo Slack. Planning happens in [org-level GitHub projects](https://github.com/orgs/portolan-sdi/projects/1).
-
-Files between `ops-sync` markers are synced from [portolan-ops](https://github.com/portolan-sdi/portolan-ops). They are overwritten on every sync run. To change one, edit it in portolan-ops.
-
-One canonical home per fact. If a value like a color, URL, or policy line exists in portolan-ops, link to it rather than copying it.
-<!-- ops-sync:end -->
 
 ## This Repository
 
-A template for a git-backed Portolan catalog. Repositories created from it
-inherit everything here, so a mistake in this file propagates.
+The git-backed Portolan mirror of GWL_FCS30D, published at
+`s3://portolan-mirrors/gwl-fcs30d/`. Metadata lives here. The COGs, the item
+index and the overview are built from the upstream Zenodo archives into
+`../gwl-fcs30d-data/staging` and uploaded with `tools/upload_data.py`.
+`RUNBOOK.md` has the build order.
+
+### Memory on the build host
+
+Run `tools/convert.py` and `tools/build_overview.py` inside a memory-capped
+unit, as `RUNBOOK.md` shows. A full-tile array is 344 MB, and GDAL's default
+block cache is 5% of RAM per process. Uncapped, 48 workers took the host down
+twice. The tools now stream by block, cap `GDAL_CACHEMAX`, and default to 16
+workers. Do not raise the worker count without measuring the peak first.
+
+### Publishing
+
+This catalog publishes with `tools/publish.py` and `tools/upload_data.py`,
+never `portolan push`. The two do not interoperate.
 
 ### The publish boundary
 
@@ -62,13 +49,11 @@ confident wrong answer that nothing downstream catches.
 
 ### The links back to this repository
 
-`catalog/catalog.json` ships a `vcs` link and an `issues` link. Both hrefs are
-setup placeholders, so `tests/test_setup.py` catches a half-edited repository.
-The Portolan spec recommends these two links for a git-backed catalog. See
-[git-backed catalogs](https://github.com/portolan-sdi/portolan-spec/blob/main/specs/best-practices/git-backed-catalogs.md),
-which merged in August 2026.
+`tools/build_stac.py` writes `vcs`, `issues`, `about` and the data-browser
+`alternate` link on every catalog and collection, from the keys in
+`catalog.publish.yaml`. The Portolan spec recommends `vcs` and `issues` for a
+git-backed catalog. See
+[git-backed catalogs](https://github.com/portolan-sdi/portolan-spec/blob/main/specs/best-practices/git-backed-catalogs.md).
 
-Keep both hrefs absolute. The repository sits outside the published catalog,
-so a relative href resolves against the public base URL. Each placeholder
-holds a `://`, because `tests/test_links.py` treats an href without one as a
-path and looks for it on disk.
+Keep these hrefs absolute. The repository sits outside the published catalog,
+so a relative href resolves against the public base URL.

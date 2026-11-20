@@ -1,37 +1,37 @@
-# AGENTS.md — Example Catalog
+# AGENTS.md — GWL_FCS30D global wetland maps
+
+[Open in data browser](https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/catalog.json) · [Source repository](https://github.com/nlebovits/gwl-fcs30d) · [Report a problem](https://github.com/nlebovits/gwl-fcs30d/issues) · [Hosting repository](https://source.coop/portolan-mirrors/gwl-fcs30d)
 
 Guidance for AI agents and automated clients working with this catalog.
 
 **One rule survives every edit to this file.** Every claim here is either quoted
 from a source or measured from the data. If you cannot point at where a fact
-came from, it does not belong in this file. An agent acting on an invented join
-key or an invented column name produces a confident wrong answer, and nothing
-downstream catches it.
+came from, it does not belong in this file.
 
 ## What this catalog holds
 
-TODO(setup): the collections, and what each one covers. Name the public root
-URL so a client that arrived here by another route can orient itself.
+The root is `https://data.source.coop/portolan-mirrors/gwl-fcs30d/catalog.json`.
+It has one collection, `gwl-fcs30d`: annual 30 m wetland class maps for 2000
+to 2022, one COG per 5° tile per year. Read the
+[collection agent guide](gwl-fcs30d/AGENTS.md) before you query. It holds the
+class codes, the nodata rule, and the tested queries.
 
 ## How to read it
 
-TODO(setup): one worked query per format you publish, each one run against the
-published files before it was written down.
+Do not walk the STAC tree to find tiles. It has 23 year catalogs, each split
+into 20° blocks, and over 22,000 item files. Query
+`gwl-fcs30d/items.parquet` instead: one row per item, with `bbox`,
+`start_datetime`, and `assets.data.href`. The
+[collection agent guide](gwl-fcs30d/AGENTS.md) has the queries.
 
 ## Join keys
 
-TODO(setup): the columns that join collections to each other, and their types.
-State which side is unique. If no two collections join, say that instead.
-
-## Quirks that produce silently wrong answers
-
-TODO(setup): the traps. A projection that is not WGS84, so lengths come out in
-feet. A column whose name differs from the one the source documentation uses. A
-category field with inconsistent casing. A geometry column that GDAL names
-`geometry_bbox` where the query you copied says `bbox`. These are the entries
-that earn this file, so write them as you find them.
+There is one collection, so nothing joins across collections. Within it, an
+item id is `<tile>_<year>`, for example `E100N25_2022`. The same tile code in
+two years covers the same pixels on the same grid, so items with the same tile
+code stack into a time series.
 
 ## Structure
 
-Assets and structural links resolve relative to the object that carries them.
-Catalogs here carry no `self` link, so a client tracks its own location.
+Structural links are relative. The root catalog carries an absolute `self`
+link, so a client can resolve every relative href against it.

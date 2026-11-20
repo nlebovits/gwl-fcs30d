@@ -4,14 +4,25 @@
   "stac_extensions": [
     "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
-  "id": "example-catalog",
-  "title": "Example Catalog",
-  "description": "TODO(setup): one or two sentences saying what this catalog holds, who produced the data, and who it is for. A person and an agent both read this first.",
+  "id": "gwl-fcs30d",
+  "title": "GWL_FCS30D global wetland maps (Portolan mirror)",
+  "description": "A Portolan mirror of GWL_FCS30D, the annual global 30 m wetland maps for 2000 to 2022 by the Aerospace Information Research Institute, Chinese Academy of Sciences. The data are Cloud-Optimized GeoTIFFs with one STAC item per 5° tile per year. Start at [AGENTS.md](AGENTS.md).",
   "links": [
     {
       "rel": "root",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/portolan-mirrors/gwl-fcs30d/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./gwl-fcs30d/collection.json",
+      "type": "application/json",
+      "title": "GWL_FCS30D: global 30 m annual wetland maps, 2000–2022"
     },
     {
       "rel": "describedby",
@@ -26,14 +37,29 @@
       "title": "Catalog agent guide"
     },
     {
+      "rel": "alternate",
+      "href": "https://browser.portolan-sdi.org/#/external/data.source.coop/portolan-mirrors/gwl-fcs30d/catalog.json",
+      "type": "text/html",
+      "title": "Open in the Portolan data browser"
+    },
+    {
       "rel": "vcs",
-      "href": "https://github.com/TODO(setup)",
+      "href": "https://github.com/nlebovits/gwl-fcs30d",
+      "type": "text/html",
       "title": "Source repository"
     },
     {
       "rel": "issues",
-      "href": "https://github.com/TODO(setup)/issues",
-      "title": "Issue tracker"
+      "href": "https://github.com/nlebovits/gwl-fcs30d/issues",
+      "type": "text/html",
+      "title": "Report a problem"
+    },
+    {
+      "rel": "about",
+      "href": "https://source.coop/portolan-mirrors/gwl-fcs30d",
+      "type": "text/html",
+      "title": "Hosting page on Source Cooperative"
     }
-  ]
+  ],
+  "updated": "2026-11-20T00:00:00Z"
 }
