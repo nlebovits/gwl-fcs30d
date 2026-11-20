@@ -42,7 +42,7 @@ ZENODO = json.loads((ROOT / "docs/research/zenodo-10068479.json").read_text())
 _SHA = ROOT / "docs/research/zenodo-10068479-sha256.json"
 SOURCE_SHA256: dict[str, str] = json.loads(_SHA.read_text()) if _SHA.exists() else {}
 
-PORTOLAN = "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+PORTOLAN = "https://schemas.portolan-sdi.org/portolan/v0.3.0/schema.json"
 EXT = {
     "classification": "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
     "projection": "https://stac-extensions.github.io/projection/v2.0.0/schema.json",

@@ -14,7 +14,10 @@ widened allow-list is a false claim about what this catalog conforms to.
 
 ## The rashid version floor
 
-The gate needs rashid `>=0.3.0,<0.4.0`, the release portolan-skills pins. It reads `rashid --version` and fails
+The gate needs rashid `>=0.4.0,<0.5.0`. 0.4.0 is the first release that does not
+require a style asset for a display-ready overview COG
+([rashid#202](https://github.com/portolan-sdi/rashid/issues/202)), which this
+catalog carries. It reads `rashid --version` and fails
 outside that range. It also fails when rashid is absent, and prints the install
 command. A skip would report a green run for a catalog that no validator read.
 
@@ -34,25 +37,7 @@ something.
 
 ## Accepted deviations
 
-| Rule | Where | Why accepted | Tracking |
-|---|---|---|---|
-| PTL-VIZ-002 | `gwl-fcs30d/collection.json` | rashid wants a `style` asset for any `visual` asset. The spec requires the overview COG to carry `visual` and `overview` and asks for no style for a display-ready COG | rashid issue, to be filed |
-
-### PTL-VIZ-002: style asset for a raster overview
-
-rashid 0.3.0 reports "collection has a visualization derivative but no asset
-with the 'style' role" because `overview-2022.tif` carries the `visual` role.
-
-The spec asks for that role. formats.md, Collection overviews: the overview COG
-"should be included as a collection-level asset with the `visual` and
-`overview` roles". core.md, Visualization, exempts the case: collections "MUST
-provide visualization styles as standalone STAC assets appropriate to the
-render path, except where the render path is self-rendering (a display-ready
-COG ...)". The overview is RGBA, so it is display-ready, and the item COGs draw
-from their embedded colour tables. The only style format the spec defines is a
-MapLibre style for PMTiles. A style file here would be a placeholder.
-
-Remove the waiver when rashid exempts display-ready raster `visual` assets.
+None.
 
 <!--
 When you accept one, add a row and a section explaining it, like this:

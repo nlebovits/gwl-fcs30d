@@ -33,7 +33,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 from publish import load_config  # noqa: E402
 
-ACCEPTED: set[str] = {"PTL-VIZ-002"}  # see docs/conformance.md
+ACCEPTED: set[str] = set()
 
 config = load_config()
 target = ROOT / config["publish_dir"]
@@ -43,9 +43,9 @@ target = ROOT / config["publish_dir"]
 # This gate asserts all four. A rashid below the floor reports a pass for a
 # catalog that it never checked against those four rules. The upper bound stops
 # an unreviewed 0.2 rule set from changing what this gate means.
-MIN_VERSION = (0, 3, 0)
-MAX_VERSION = (0, 4, 0)
-SPEC = "rashid>=0.3.0,<0.4.0"
+MIN_VERSION = (0, 4, 0)
+MAX_VERSION = (0, 5, 0)
+SPEC = "rashid>=0.4.0,<0.5.0"
 INSTALL = f"python -m pip install '{SPEC}'"
 
 
